@@ -19,7 +19,7 @@ alt.themes.enable('dark')
 def detect_defects(image_bytes):
     image_with_bbox = image_bytes
     files = {'files': image_with_bbox}
-    response = requests.post('http://127.0.0.1:5000/process_image', files=files)
+    response = requests.post('http://flask-app:5000/process_image', files=files)
     return response.json()['message']
 
 

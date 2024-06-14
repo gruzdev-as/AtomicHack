@@ -13,7 +13,7 @@ def process_image():
 
     if file:
         filename = secure_filename(file.filename)
-        filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        filepath = os.path.join(app.config['UPLOAD_FOLDER'])
         file.save(filepath)
 
         # Вызов функции обработки нейронкой
