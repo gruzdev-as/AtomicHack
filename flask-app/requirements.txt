@@ -1,2 +1,5 @@
-Flask==3.0.3
-Werkzeug==3.0.3
+Flask
+Werkzeug
+opencv-python
+ultralytics
+matplotlib

@@ -20,7 +20,6 @@ def main():
         st.title('👨‍🏭 Детекция дефектов сварных швов')
         uploaded_image = st.file_uploader('Выберите изображение', type=['jpg', 'jpeg', 'png'])
 
-
         if st.button('Загрузить другое изображение'):
             st.session_state['state'] = 'initial'
             st.rerun()
