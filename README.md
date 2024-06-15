@@ -1,7 +1,8 @@
 # AtomicHack
 ![](https://github.com/gruzdev-as/AtomicHack/assets/95618433/7ee5bba3-ef52-4263-8b8a-84e337529ebe)
 
-Team Members:
+## Team Members:
+
 1) **Груздев Александр** - Captain + ML (a little bit)
 2) **Литвинов Максим** - ML
 3) **Рыжичкин Кирилл** - ML
