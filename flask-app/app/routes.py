@@ -1,17 +1,13 @@
-import io
-import os
-from flask import render_template, request, jsonify, send_file
-from werkzeug.utils import secure_filename
+
+from flask import render_template, request, jsonify
 from app import app
-from PIL import Image
-from io import BytesIO
 import os
 import imghdr
 import uuid
+from app.model import show_detected_image
 
 
-def neiro(filepath):
-    pass
+
 
 
 
@@ -36,8 +32,8 @@ def process_image():
             file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             file.seek(0)
             file.save(file_path)
-            #neiro(filepath) -> filepath
-            return jsonify({"message": "File saved successfully!", "file_path": file_path}), 200
+            file_path_new = show_detected_image(file_path)
+            return jsonify({"message": "File saved successfully!", "file_path": file_path_new}), 200
         else:
             return jsonify({"error": "Unsupported file type"}), 400
 
