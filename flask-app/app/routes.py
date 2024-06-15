@@ -11,7 +11,9 @@ import uuid
 
 
 def neiro(filepath):
-    return
+    pass
+
+
 
 def generate_random_filename(extension):
     """Генерация случайного имени файла с указанным расширением."""
@@ -24,6 +26,7 @@ def process_image():
     file = request.files['file']
     if file.filename == '':
         return jsonify({"error": "No selected file"}), 400
+
     if file:
         file_bytes = file.read()
         file_type = imghdr.what(None, h=file_bytes)
