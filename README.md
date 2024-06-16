@@ -30,7 +30,10 @@
 
 Для воспроизведения решения воспользуйтесь ноутбуками из папки notebooks. 
 
-Для сборки и демо решения локально нужно git clone epta potom dopishu
+Для сборки и демо решения локально нужно : 
+1) ```git clone https://github.com/gruzdev-as/AtomicHack.git```
+
+2) ```docker-compose up -d --build```
 
 ## Потенциальные улучшения и перспективы развития 
 
