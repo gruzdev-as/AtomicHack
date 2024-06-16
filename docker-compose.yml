@@ -1,0 +1,25 @@
+version: '3'
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - flask-api
+      - streamlit
+
+  flask-api:
+    build:
+      context: ./flask-app
+    ports:
+      - "5000:5000"
+    restart: always
+
+  streamlit:
+    build:
+      context: ./streamlit-app
+    ports:
+      - "8501:8501"
+    restart: always
