@@ -15,6 +15,7 @@
 
 Ссылка на поднятое решение:
 
+Ссылка на модели: [Тык](https://drive.google.com/drive/folders/1jBI0PG41jZ9YRZ80Jf16CFXP2txMVF7B?usp=sharing)
 ## Описание решения 
 
 Мы предлагаем использовать для решения задачи детекции дефекта сварного шва две модели - YOLOv{VERSION}X а также модель Detection Transformer. 
