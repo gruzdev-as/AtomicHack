@@ -6,7 +6,7 @@
 1) [**Груздев Александр**](https://github.com/gruzdev-as) - Captain + ML (a little bit)
 2) [**Литвинов Максим**](https://github.com/maksimlitvinov39kg) - ML
 3) [**Рыжичкин Кирилл**](https://github.com/l1ghtsource) - ML
-4) **Аксеновский Максим** - ML
+4) [**Аксеновский Максим**](https://github.com/Solitum26) - ML
 5) [**Лозовенко Артем**](https://github.com/7aaassss) - Backend + Frontend
 
 ## Кейс "Определение дефектов сварных швов с помощью нейросети (DS)"
