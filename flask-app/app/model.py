@@ -1,17 +1,11 @@
 import cv2
 import matplotlib.pyplot as plt
-from ultralytics import YOLO
+from ultralytics import YOLO, RTDETR
 import os
 
 
-model = YOLO("../temp/best (1).pt")  #сюда вставить .pt файл модели которую скинем
-class_descriptions = {
-    'adj': 'прилегающие дефекты',
-    'int': 'дефекты целостности',
-    'geo': 'дефекты геометрии',
-    'pro': 'дефекты постобработки',
-    'non': 'дефекты невыполнения'
-}
+#model = YOLO("../temp/best (1).pt")  #сюда вставить .pt файл модели которую скинем
+model = RTDETR("../temp/last1.pt") #если используется детр
 
 def show_detected_image(img_path):
     img = cv2.imread(img_path)
